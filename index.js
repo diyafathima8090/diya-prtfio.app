@@ -1,6 +1,6 @@
 // Initialize EmailJS
 (function() {
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    emailjs.init("-1BkWsSJhJW8B_p1H"); // Replace with your EmailJS public key
 })();
 
 // Mobile menu toggle
@@ -46,7 +46,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     };
     
     // Send email using EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+    emailjs.send('service_b99412o', 'template_5bzfvhe', formData)
         .then(function(response) {
             // Success
             showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
@@ -124,4 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
             this.parentElement.classList.remove('ring-2', 'ring-blue-500', 'ring-opacity-25');
         });
     });
+
 });

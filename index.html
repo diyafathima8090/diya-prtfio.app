@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diya Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-50 font-poppins">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">Diya Fathima</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block text-gray-600 hover:text-blue-600 py-2">Home</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 py-2">About</a>
+                <a href="#projects" class="block text-gray-600 hover:text-blue-600 py-2">Projects</a>
+                <a href="#skills" class="block text-gray-600 hover:text-blue-600 py-2">Skills</a>
+                <a href="#contact" class="block text-gray-600 hover:text-blue-600 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Diya Fathima</span></h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">Software Developer</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors font-semibold">View My Work</a>
+                    <a href="#contact" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-colors font-semibold">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="WhatsApp Image 2025-08-21 at 21.30.36_ec23c2a6 - Copy.jpg" alt="About" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Software Developer</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed"> I’m Diya Fathima, a self-driven and detail-oriented software  Developer in the making, passionate about building clean,
+                 user-friendly web experiences. I recently developed my own portfolio website using HTML, CSS, and JavaScript, showcasing my growing skill set in front-end development.</p>
+                    <p class="text-gray-600 mb-8 leading-relaxed"> I enjoy exploring modern technologies like React , and I’m always eager to learn and push my boundaries. Whether it’s coding a responsive layout or solving a tricky bug,
+                   . Outside of tech,
+                    I enjoy refining my personal brand and helping others with creative design ideas.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">EDUCATION</h4>
+                            <p class="text-gray-600 text-sm">+2 Computer Science</p>
+                        </div>
+                       <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">INTERN</h4>
+                            <p class="text-gray-600 text-sm">software developer at Bridgeon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Screenshot 2025-09-22 103705.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Navbar</h3>
+                        <p class="text-gray-600 mb-4">Recreated the W3Schools navigation system with responsive design, dropdown menus, and smooth animations. Focus on clean code structure and cross-browser compatibility.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">html</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">css</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="Screenshot 2025-09-22 103919.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Justdial UI clone</h3>
+                        <p class="text-gray-600 mb-4">The clone featuring the popular local search and business listing platform, Justdial. It aims to emulate the look, feel, and user experience of the original site, allowing users to search.</p>
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">html</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">css</span>
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <video src="Untitled video - Made with Clipchamp_1758525695970.mp4" alt="Project 3" class="w-full h-48 object-cover"  autoplay></video>
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">Portfolio</h2>
+                        <p class="text-gray-600 mb-4">responsive interface built using HTML, CSS, and JavaScript, this project showcases my ability to create real-world, user-friendly applications with attention to detail in both design and functionality.</p>
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">JAVASCRIPT</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">BOOTSTRAP</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Skills & Technologies</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Frontend -->
+                <div class="text-center">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">HTML</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span></span>
+                                <span class="text-blue-600 font-semibold">98%</span>
+                            </div>
+                           
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="text-center">
+                    <div class="bg-green-50 rounded-lg p-6">
+                        <i class="fas fa-server text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">CSS</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span></span>
+                                <span class="text-green-600 font-semibold">93%</span>
+                            </div>
+                            
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="text-center">
+                    <div class="bg-purple-50 rounded-lg p-6">
+                        <i class="fas fa-database text-4xl text-purple-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">JAVASCRIPT</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span></span>
+                                <span class="text-purple-600 font-semibold">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-600 h-2 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootstrap-->
+                   <div class="text-center">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">BOOTSTRAP</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span></span>
+                                <span class="text-blue-600 font-semibold">95%</span>
+                            </div>
+                           
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="text-center">
+                    <div class="bg-orange-50 rounded-lg p-6">
+                        <i class="fas fa-tools text-4xl text-orange-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Tools</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span>Git/GitHub</span>
+                                <span class="text-orange-600 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4">Have a project in mind? Let's discuss how I can help bring your vision to life.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                                <div>
+                                    <p class="text-gray-600">Email</p>
+                                    <a href="mailto:thasnee8090@gmail.com" class="text-blue-600 hover:underline">thasnee8090@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-phone text-blue-600 text-xl"></i>
+                                <div>
+                                    <p class="text-gray-600">Phone</p>
+                                    <a href="tel:+91 7736796470" class="text-blue-600 hover:underline">+91 7736796470</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                                <div>
+                                    <p class="text-gray-600">Location</p>
+                                    <p class="text-gray-800">kerala,mallapuram</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/diya-fathima-744079378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://diyafathima8090.github.io/diya-fathima/" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/diya.phathima?igsh=MWV1OG9lbzIwbnljaw==" class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden">
+                        <p id="message-text" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Diya Fathima. All rights reserved.</p>
+            <p class="text-gray-400 mt-2">Web Developer</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

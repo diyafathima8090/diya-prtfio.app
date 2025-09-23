@@ -39,8 +39,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     submitBtn.disabled = true;
     
     const formData = {
-        from_name: document.getElementById('name').value,
-        from_email: document.getElementById('email').value,
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     };
@@ -126,3 +126,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+

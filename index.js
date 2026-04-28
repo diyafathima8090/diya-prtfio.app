@@ -1,6 +1,6 @@
 // Initialize EmailJS
 (function() {
-    emailjs.init("-1BkWsSJhJW8B_p1H"); // Replace with your EmailJS public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
 })();
 
 // Mobile menu toggle
@@ -39,14 +39,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     submitBtn.disabled = true;
     
     const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     };
     
     // Send email using EmailJS
-    emailjs.send('service_b99412o', 'template_5bzfvhe', formData)
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
         .then(function(response) {
             // Success
             showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
@@ -87,7 +87,11 @@ const observerOptions = {
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
+            // Get the specific animation for this section, default to fade-in-up
+            const animationClass = entry.target.dataset.animation || 'fade-in-up';
+            entry.target.classList.add(animationClass);
+            // Stop observing once the animation has been triggered
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
@@ -124,6 +128,4 @@ document.addEventListener('DOMContentLoaded', function() {
             this.parentElement.classList.remove('ring-2', 'ring-blue-500', 'ring-opacity-25');
         });
     });
-
 });
-
